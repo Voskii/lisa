@@ -1,0 +1,21 @@
+/* Set up colour palette and fonts using variables */
+
+:root {
+    --primary: #7fff00; /* */
+    --onprimary: #000000; /* */
+    --secondary: #000000; /* */
+    --onsecondary: #000000; /* */
+    --tertiary: #1f1fff; /* */
+    --ontertiary: #ffffff; /* */
+    --page: #fcf340; /* */
+    --onpage: #ffffff; /* */
+    --detail: #03dddc; /* */
+    --detail2: #fb33db; /* */
+
+    /*fb33db Verdana, sans-serif;*/
+  
+    --body-font: 1rem Cyberway Riders;
+    --header-font: lighter 6rem Cyberway Riders;
+    --title-font: lighter 2rem "Monoton", cursive;
+    --quote-font: lighter 1.5rem "Monoton", cursive;
+  }
