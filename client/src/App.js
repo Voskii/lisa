@@ -1,29 +1,17 @@
 import React, {useContext} from 'react'
 import { Routes, Route, Navigate } from 'react-router-dom'
-import Navbar from './components/Navbar.js'
-import { GameContext } from './context/GameProvider.js'
-import Header from './components/Header.js'
-import { useMediaQuery } from 'react-responsive'
-import Footer from './components/Footer.js'
+import Episodes from './Episodes.js'
+import Home from './Home.js'
+import Navbar from './Navbar.js'
 
 export default function App(){
-//   const { token, logout } = useContext(UserContext)
-  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 550px)' })
-  
-  return (
-    <div className="app">
-        <Routes>
-          <Route 
-            path="/" 
-            element={ token ? <Navigate to='/game'/> : <Auth />}
-          />
-          <Route 
-            path="/game"
-            element={<Game />}
-          />
-        </Routes>
-        {/* { token && <Footer />} */}
-      
-    </div>
-  )
+
+    return (
+        <div>
+            <Routes className = "routes">
+                <Route index path = "/" element = {<Home />} />
+                <Route path = "/episodes" element = {<Episodes />} />
+            </Routes>
+        </div>
+    )
 }
